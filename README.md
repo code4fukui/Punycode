@@ -14,23 +14,6 @@ This project was [bundled](https://github.com/joyent/node/blob/master/lib/punyco
 
 The current version supports recent versions of Node.js only. It provides a CommonJS module and an ES6 module. For the old version that offers the same functionality with broader support, including Rhino, Ringo, Narwhal, and web browsers, see [v1.4.1](https://github.com/bestiejs/punycode.js/releases/tag/v1.4.1).
 
-## Installation
-
-Via [npm](https://www.npmjs.com/):
-
-```bash
-npm install punycode --save
-```
-
-In [Node.js](https://nodejs.org/):
-
-> ⚠️ Note that userland modules don't hide core modules.
-> For example, `require('punycode')` still imports the deprecated core module even if you executed `npm install punycode`.
-> Use `require('punycode/')` to import userland modules rather than core modules.
-
-```js
-const punycode = require('punycode/');
-```
 
 ## API
 
@@ -39,9 +22,10 @@ const punycode = require('punycode/');
 Converts a Punycode string of ASCII symbols to a string of Unicode symbols.
 
 ```js
+import { Punycode } from "https://code4fukui.github.io/Punycode/Punycode.js";
 // decode domain name parts
-punycode.decode('maana-pta'); // 'mañana'
-punycode.decode('--dqo34k'); // '☃-⌘'
+Punycode.decode('maana-pta'); // 'mañana'
+Punycode.decode('--dqo34k'); // '☃-⌘'
 ```
 
 ### `punycode.encode(string)`
@@ -49,9 +33,10 @@ punycode.decode('--dqo34k'); // '☃-⌘'
 Converts a string of Unicode symbols to a Punycode string of ASCII symbols.
 
 ```js
+import { Punycode } from "https://code4fukui.github.io/Punycode/Punycode.js";
 // encode domain name parts
-punycode.encode('mañana'); // 'maana-pta'
-punycode.encode('☃-⌘'); // '--dqo34k'
+Punycode.encode('mañana'); // 'maana-pta'
+Punycode.encode('☃-⌘'); // '--dqo34k'
 ```
 
 ### `punycode.toUnicode(input)`
