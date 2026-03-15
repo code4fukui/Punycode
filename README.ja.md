@@ -1,9 +1,6 @@
 # Punycode.js
 
-Punycode.js は、RFC 3492 および RFC 5891に完全に準拠した堅牢なPunycodeコンバーターです。
-
-## デモ
-なし
+Punycode.js は、RFC 3492および RFC 5891に完全に準拠した堅牢なPunycodeコンバーターです。
 
 ## 機能
 - Punycodeとの間の相互変換
@@ -24,10 +21,10 @@ npm install punycode
 ```javascript
 import { Punycode } from "https://code4fukui.github.io/Punycode/Punycode.js";
 
-// Punycodeから Unicode への変換
+// Punycodeから Unicodeへの変換
 console.log(Punycode.decode('tckzb0d6c')); // 出力: 'コメント'
 
-// Unicodeから Punycodeへの変換
+// Unicodeから Punycodeへの変換 
 console.log(Punycode.encode('ドメイン名例')); // 出力: 'eckwd4c7cu47r2wf'
 ```
 

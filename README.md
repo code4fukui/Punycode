@@ -1,6 +1,8 @@
 # Punycode.js
 
-Punycode.js is a robust Punycode converter that fully complies to [RFC 3492](https://tools.ietf.org/html/rfc3492) and [RFC 5891](https://tools.ietf.org/html/rfc5891).
+> 日本語のREADMEはこちらです: [README.ja.md](README.ja.md)
+
+Punycode.js is a robust Punycode converter that fully complies with [RFC 3492](https://tools.ietf.org/html/rfc3492) and [RFC 5891](https://tools.ietf.org/html/rfc5891).
 
 ## Features
 
@@ -17,7 +19,7 @@ import { Punycode } from "https://code4fukui.github.io/Punycode/Punycode.js";
 Punycode.decode('maana-pta'); // 'mañana'
 Punycode.decode('--dqo34k'); // '☃-⌘'
 
-// encode domain name parts  
+// encode domain name parts
 Punycode.encode('mañana'); // 'maana-pta'
 Punycode.encode('☃-⌘'); // '--dqo34k'
 ```
