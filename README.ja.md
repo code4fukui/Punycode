@@ -12,12 +12,6 @@ Punycode.js は、RFC 3492および RFC 5891に完全に準拠した堅牢なPun
 
 ## 使い方
 
-### インストール
-```
-npm install punycode
-```
-
-### 使用例
 ```javascript
 import { Punycode } from "https://code4fukui.github.io/Punycode/Punycode.js";
 

@@ -48,4 +48,4 @@ Provides `decode` and `encode` methods for working with UCS-2 encoded strings.
 
 ## License
 
-Punycode.js is available under the [MIT](https://mths.be/mit) license.
+MIT License — see [LICENSE](LICENSE).
